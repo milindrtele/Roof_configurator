@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tool_bar_parent {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  flex: 1;
+  height: 100%;
+}
