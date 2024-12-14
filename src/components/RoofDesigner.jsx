@@ -56,6 +56,15 @@ function RoofDesigner(props) {
 
     sceneRef.current.background = new THREE.Color(0xffffff);
 
+    new RGBELoader().load(
+      "/hdri/symmetrical_garden_02_1k.hdr",
+      function (texture, textureData) {
+        texture.mapping = THREE.EquirectangularReflectionMapping;
+        //sceneRef.current.background = texture;
+        sceneRef.current.environment = texture;
+      }
+    );
+
     addGrid();
 
     var points = [],
@@ -112,7 +121,7 @@ function RoofDesigner(props) {
     const extrude = (button_name) => {
       const extrudeSettings = {
         steps: 2,
-        depth: 16,
+        depth: 20,
         bevelOffset: 0,
         bevelSegments: 1,
       };
@@ -128,6 +137,7 @@ function RoofDesigner(props) {
       });
       const mesh = new THREE.Mesh(geometry, material);
       sceneRef.current.add(mesh);
+      console.log(mesh);
     };
 
     setRoofDesignerAction(() => extrude);

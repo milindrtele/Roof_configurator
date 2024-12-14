@@ -6,6 +6,7 @@ function Navbar(props) {
     <nav>
       <Link to="/">Viewer</Link>
       <Link to="/design">Designer</Link>
+      <Link to="/para_editor">Editor</Link>
       <Toolbar />
     </nav>
   );

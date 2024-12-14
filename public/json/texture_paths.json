@@ -1,0 +1,35 @@
+[
+    {
+        "roofTextureName": "a",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "abc",
+        "roofTexturePath": [
+            "/models/roof_textures/01/1024_512_roof_base.jpg",
+            "/models/roof_textures/01/SpecularMap.jpg",
+            "/models/roof_textures/01/NormalMap.jpg",
+            "/models/roof_textures/01/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "b",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "abc",
+        "roofTexturePath": [
+            "/models/roof_textures/Amber_Roof/Amber Diff 4.jpg",
+            "/models/roof_textures/Amber_Roof/SpecularMap.png",
+            "/models/roof_textures/Amber_Roof/NormalMap.png",
+            "/models/roof_textures/Amber_Roof/AmbientOcclusionMap.png"
+        ]
+    },
+    {
+        "roofTextureName": "c",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "abc",
+        "roofTexturePath": [
+            "/models/roof_textures/pacific_tile/base.jpg",
+            "/models/roof_textures/pacific_tile/SpecularMap.jpg",
+            "/models/roof_textures/pacific_tile/NormalMap.jpg",
+            "/models/roof_textures/pacific_tile/AmbientOcclusionMap.jpg"
+        ]
+    }
+]
