@@ -22,8 +22,8 @@ function App() {
           {/* <Navbar /> */}
           <Routes>
             <Route path="/" element={<RoofViewer />} />
-            <Route path="/design" element={<RoofDesigner />} />
-            <Route path="/para_editor" element={<RoofEditor />} />
+            {/* <Route path="/design" element={<RoofDesigner />} />
+            <Route path="/para_editor" element={<RoofEditor />} /> */}
           </Routes>
         </SelectedTileContext.Provider>
       </FunctionContext.Provider>

@@ -1,6 +1,9 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 canvas {
@@ -23,7 +26,7 @@ canvas {
 
 .tile_menu_container {
   position: absolute;
-  padding-top: calc(10px + 3rem);
+  padding-top: calc(20px + 3rem);
   top: 0;
   left: -30vw;
   width: max-content;
@@ -46,7 +49,7 @@ canvas {
 
 .show_hide_button {
   position: fixed;
-  top: 10px;
+  top: 20px;
   left: 10px;
   width: 3rem;
   height: 3rem;
@@ -62,13 +65,32 @@ canvas {
   height: max-content;
   display: flex;
   flex-direction: column;
+  padding: 0 0 5% 4%;
+}
 
-  padding: 5% 0;
+.tile_container:hover {
+  background-color: #a2a2a2;
+}
+
+.tile_header {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.tile_header p {
+  margin-top: 0;
 }
 
 .tile_details {
   display: flex;
   flex-direction: row;
+}
+
+.tile_details p {
+  margin-top: 0;
 }
 
 .tile_icon {
@@ -77,11 +99,13 @@ canvas {
   background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: red;
 }
 
 .tile_info {
   width: 20vw;
   height: auto;
-  background-color: blue;
+  font-style: normal;
+  color: white;
+  font-size: 1rem;
+  margin: 5%;
 }

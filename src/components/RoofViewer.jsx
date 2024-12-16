@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useContext } from "react";
 
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { TransformControls } from "three/addons/controls/TransformControls.js";
+// import { TransformControls } from "three/addons/controls/TransformControls.js";
 import { RGBELoader } from "three/addons/loaders/RGBELoader.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import MySky from "../scripts/sky";
@@ -122,7 +122,7 @@ function RoofViewer() {
 
     uniforms["sunPosition"].value.copy(sun);
 
-    const spotLight = new THREE.SpotLight(0xffffff, 10000);
+    const spotLight = new THREE.SpotLight(0xffffff, 5000);
     spotLight.position.set(20, 20, 2.5);
     spotLight.angle = Math.PI / 4;
     spotLight.penumbra = 1;
@@ -139,10 +139,10 @@ function RoofViewer() {
     spotLight.shadow.bias = -0.0001;
     sceneRef.current.add(spotLight);
 
-    transformControlRef.current.attach(spotLight);
+    //transformControlRef.current.attach(spotLight);
 
-    const lightHelper = new THREE.SpotLightHelper(spotLight);
-    sceneRef.current.add(lightHelper);
+    // const lightHelper = new THREE.SpotLightHelper(spotLight);
+    // sceneRef.current.add(lightHelper);
 
     function guiChanged() {
       const uniforms = mySky.sky.material.uniforms;
@@ -178,33 +178,33 @@ function RoofViewer() {
       rendererRef.current.render(sceneRef.current, cameraRef.current);
     }
 
-    const gui = new GUI();
+    // const gui = new GUI();
 
-    gui.add(effectController, "turbidity", 0.0, 20.0, 0.1).onChange(guiChanged);
-    gui.add(effectController, "rayleigh", 0.0, 4, 0.001).onChange(guiChanged);
-    gui
-      .add(effectController, "mieCoefficient", 0.0, 0.1, 0.001)
-      .onChange(guiChanged);
-    gui
-      .add(effectController, "mieDirectionalG", 0.0, 1, 0.001)
-      .onChange(guiChanged);
-    gui.add(effectController, "elevation", 0, 90, 0.1).onChange(guiChanged);
-    gui.add(effectController, "azimuth", -180, 180, 0.1).onChange(guiChanged);
-    gui.add(effectController, "exposure", 0, 1, 0.0001).onChange(guiChanged);
+    // gui.add(effectController, "turbidity", 0.0, 20.0, 0.1).onChange(guiChanged);
+    // gui.add(effectController, "rayleigh", 0.0, 4, 0.001).onChange(guiChanged);
+    // gui
+    //   .add(effectController, "mieCoefficient", 0.0, 0.1, 0.001)
+    //   .onChange(guiChanged);
+    // gui
+    //   .add(effectController, "mieDirectionalG", 0.0, 1, 0.001)
+    //   .onChange(guiChanged);
+    // gui.add(effectController, "elevation", 0, 90, 0.1).onChange(guiChanged);
+    // gui.add(effectController, "azimuth", -180, 180, 0.1).onChange(guiChanged);
+    // gui.add(effectController, "exposure", 0, 1, 0.0001).onChange(guiChanged);
 
-    // Add the properties to the GUI
+    // // Add the properties to the GUI
 
-    gui.add(shadowProperties, "castShadow").onChange(shadowChanged);
-    gui.addColor(shadowProperties, "color").onChange((value) => {
-      spotLight.color.set(value);
-    });
-    gui.add(shadowProperties, "near", 0, 5000, 10).onChange(shadowChanged);
-    gui.add(shadowProperties, "far", 0, 5000, 10).onChange(shadowChanged);
-    gui
-      .add(shadowProperties, "bias", -0.01, 0.01, 0.0001)
-      .onChange(shadowChanged);
+    // gui.add(shadowProperties, "castShadow").onChange(shadowChanged);
+    // gui.addColor(shadowProperties, "color").onChange((value) => {
+    //   spotLight.color.set(value);
+    // });
+    // gui.add(shadowProperties, "near", 0, 5000, 10).onChange(shadowChanged);
+    // gui.add(shadowProperties, "far", 0, 5000, 10).onChange(shadowChanged);
+    // gui
+    //   .add(shadowProperties, "bias", -0.01, 0.01, 0.0001)
+    //   .onChange(shadowChanged);
 
-    guiChanged();
+    // guiChanged();
   }
 
   useEffect(() => {
@@ -230,28 +230,38 @@ function RoofViewer() {
       cameraRef.current,
       canvasRef.current
     );
+    controlsRef.current.enableDamping = true;
+    controlsRef.current.dampingFactor = 0.2;
+    controlsRef.current.enablePan = false;
+    controlsRef.current.minPolarAngle = (Math.PI / 180) * 45;
+    controlsRef.current.maxPolarAngle = (Math.PI / 180) * 84;
+    // controlsRef.current.minAzimuthAngle = Math.PI * 0.25 * -1;
+    // controlsRef.current.maxAzimuthAngle = Math.PI * 0.25;
+    controlsRef.current.minDistance = 3;
+    controlsRef.current.maxDistance = 35;
 
-    transformControlRef.current = new TransformControls(
-      cameraRef.current,
-      canvasRef.current
-    );
+    // transformControlRef.current = new TransformControls(
+    //   cameraRef.current,
+    //   canvasRef.current
+    // );
 
-    transformControlRef.current.addEventListener(
-      "dragging-changed",
-      function (event) {
-        controlsRef.current.enabled = !event.value;
-      }
-    );
+    // transformControlRef.current.addEventListener(
+    //   "dragging-changed",
+    //   function (event) {
+    //     controlsRef.current.enabled = !event.value;
+    //   }
+    // );
 
-    const gizmo = transformControlRef.current.getHelper();
-    sceneRef.current.add(gizmo);
+    //const gizmo = transformControlRef.current.getHelper();
+    //sceneRef.current.add(gizmo);
 
     new RGBELoader().load(
       // "/hdri/symmetrical_garden_02_1k.hdr",
       //"/hdri/rosendal_plains_1_1k.hdr",
       //"/hdri/rogland_clear_night_1k.hdr",
       //"/hdri/qwantani_dusk_2_1k.hdr",
-      "/hdri/goegap_road_1k.hdr",
+      //"/hdri/goegap_road_1k.hdr",
+      "/hdri/autumn_field_1k.hdr",
       function (texture, textureData) {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         sceneRef.current.background = texture;
@@ -265,7 +275,10 @@ function RoofViewer() {
     // Instantiate a loader
     const loader = new GLTFLoader();
 
-    myHouseRef.current = new MyHouse(sceneRef.current, "/models/Model_01.glb");
+    myHouseRef.current = new MyHouse(
+      sceneRef.current,
+      "/models/Model_01_dome.glb"
+    );
 
     // // Load a glTF resource
     // loader.load(

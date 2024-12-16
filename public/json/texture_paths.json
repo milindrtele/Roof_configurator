@@ -1,5 +1,6 @@
 [
     {
+        "roofTextureTitle": "Barrel Vault Barcelona",
         "roofTextureName": "barrelVault_barcelona",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/barrelVault_barcelona/BaseMap.jpg",
@@ -8,9 +9,11 @@
             "/models/roof_textures/tiles/barrelVault_barcelona/SpecularMap.jpg",
             "/models/roof_textures/tiles/barrelVault_barcelona/NormalMap.jpg",
             "/models/roof_textures/tiles/barrelVault_barcelona/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Barcelona style barrel vault roof texture."
     },
     {
+        "roofTextureTitle": "Barrel Vault Dover",
         "roofTextureName": "barrelVault_dover",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/barrelVault_dover/BaseMap.jpg",
@@ -19,9 +22,11 @@
             "/models/roof_textures/tiles/barrelVault_dover/SpecularMap.jpg",
             "/models/roof_textures/tiles/barrelVault_dover/NormalMap.jpg",
             "/models/roof_textures/tiles/barrelVault_dover/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Dover style barrel vault roof texture."
     },
     {
+        "roofTextureTitle": "Oak Ridge Aged Cedar",
         "roofTextureName": "oakRidge_agedCedar",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/oakRidge_agedCedar/BaseMap.jpg",
@@ -30,9 +35,11 @@
             "/models/roof_textures/tiles/oakRidge_agedCedar/SpecularMap.jpg",
             "/models/roof_textures/tiles/oakRidge_agedCedar/NormalMap.jpg",
             "/models/roof_textures/tiles/oakRidge_agedCedar/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Aged cedar roof texture for Oak Ridge style."
     },
     {
+        "roofTextureTitle": "Oak Ridge Amber",
         "roofTextureName": "oakRidge_amber",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/oakRidge_amber/BaseMap.jpg",
@@ -41,9 +48,11 @@
             "/models/roof_textures/tiles/oakRidge_amber/SpecularMap.jpg",
             "/models/roof_textures/tiles/oakRidge_amber/NormalMap.jpg",
             "/models/roof_textures/tiles/oakRidge_amber/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Amber roof texture for Oak Ridge style."
     },
     {
+        "roofTextureTitle": "Pacifiv Tile",
         "roofTextureName": "pacific_tile",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/pacific_tile/BaseMap.jpg",
@@ -52,9 +61,11 @@
             "/models/roof_textures/tiles/pacific_tile/SpecularMap.jpg",
             "/models/roof_textures/tiles/pacific_tile/NormalMap.jpg",
             "/models/roof_textures/tiles/pacific_tile/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Pacifiv tile roof texture."
     },
     {
+        "roofTextureTitle": "Pine Crest Barclay",
         "roofTextureName": "pineCrest_barclay",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/pineCrest_barclay/BaseMap.jpg",
@@ -63,9 +74,11 @@
             "/models/roof_textures/tiles/pineCrest_barclay/SpecularMap.jpg",
             "/models/roof_textures/tiles/pineCrest_barclay/NormalMap.jpg",
             "/models/roof_textures/tiles/pineCrest_barclay/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Barclay roof texture for Pine Crest style."
     },
     {
+        "roofTextureTitle": "Pine Crest Charcoal",
         "roofTextureName": "pineCrest_charcoal",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/pineCrest_charcoal/BaseMap.jpg",
@@ -74,9 +87,11 @@
             "/models/roof_textures/tiles/pineCrest_charcoal/SpecularMap.jpg",
             "/models/roof_textures/tiles/pineCrest_charcoal/NormalMap.jpg",
             "/models/roof_textures/tiles/pineCrest_charcoal/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Charcoal roof texture for Pine Crest style."
     },
     {
+        "roofTextureTitle": "Brownstone",
         "roofTextureName": "singleWidthSlate_brownstone",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/singleWidthSlate_brownstone/BaseMap.jpg",
@@ -85,9 +100,11 @@
             "/models/roof_textures/tiles/singleWidthSlate_brownstone/SpecularMap.jpg",
             "/models/roof_textures/tiles/singleWidthSlate_brownstone/NormalMap.jpg",
             "/models/roof_textures/tiles/singleWidthSlate_brownstone/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Brownstone roof texture."
     },
     {
+        "roofTextureTitle": "Sonora",
         "roofTextureName": "singleWidthSlate_sonora",
         "roofTextureType": "abc",
         "roofTextureIconPath": "/models/roof_textures/tiles/singleWidthSlate_sonora/BaseMap.jpg",
@@ -96,6 +113,7 @@
             "/models/roof_textures/tiles/singleWidthSlate_sonora/SpecularMap.jpg",
             "/models/roof_textures/tiles/singleWidthSlate_sonora/NormalMap.jpg",
             "/models/roof_textures/tiles/singleWidthSlate_sonora/AmbientOcclusionMap.jpg"
-        ]
+        ],
+        "roofTextureDescription": "Sonora roof texture."
     }
 ]

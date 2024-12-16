@@ -19,12 +19,14 @@ function Tile(props) {
       }}
     >
       <div className="tile_header">
-        <p>{props.data.roofTextureName}</p>
+        <p>{props.data.roofTextureTitle}</p>
       </div>
       <div className="tile_details">
         <div ref={tileIconRef} className="tile_icon"></div>{" "}
         {/* Attach ref here */}
-        <div className="tile_info"></div>
+        <div className="tile_info">
+          <p>{props.data.roofTextureDescription}</p>
+        </div>
       </div>
     </div>
   );

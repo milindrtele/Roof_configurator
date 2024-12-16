@@ -9,6 +9,7 @@ class MyHouse {
     this.roofParentObject = null;
     this.roofMaterial = null;
     this.texture_data = null; // Holds the texture data fetched from the JSON
+    this.dome = null;
     this.init();
   }
 
@@ -46,6 +47,8 @@ class MyHouse {
         (gltf) => {
           this.scene.add(gltf.scene);
           this.roofParentObject = gltf.scene.getObjectByName("roof_parent");
+          this.dome = gltf.scene.getObjectByName("dome");
+          this.dome.material.side = THREE.DoubleSide;
           gltf.scene.traverse((obj) => {
             if (obj.isMesh) {
               obj.castShadow = true;
