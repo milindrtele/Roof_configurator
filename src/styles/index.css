@@ -20,3 +20,68 @@ canvas {
   flex: 1;
   height: 100%;
 }
+
+.tile_menu_container {
+  position: absolute;
+  padding-top: calc(10px + 3rem);
+  top: 0;
+  left: -30vw;
+  width: max-content;
+  height: 100vh;
+  background-color: rgba(76, 171, 255, 0.468);
+
+  overflow-y: scroll;
+  overflow-x: visible;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  transition: left 0.5s;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tile_menu_container::-webkit-scrollbar {
+  display: none;
+}
+
+.show_hide_button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../../public/icons/chevron-down-solid.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+
+.tile_container {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+
+  padding: 5% 0;
+}
+
+.tile_details {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile_icon {
+  width: 10vw;
+  height: 10vw;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: red;
+}
+
+.tile_info {
+  width: 20vw;
+  height: auto;
+  background-color: blue;
+}

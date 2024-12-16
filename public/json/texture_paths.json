@@ -1,35 +1,101 @@
 [
     {
-        "roofTextureName": "a",
+        "roofTextureName": "barrelVault_barcelona",
         "roofTextureType": "abc",
-        "roofTextureIconPath": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/barrelVault_barcelona/BaseMap.jpg",
         "roofTexturePath": [
-            "/models/roof_textures/01/1024_512_roof_base.jpg",
-            "/models/roof_textures/01/SpecularMap.jpg",
-            "/models/roof_textures/01/NormalMap.jpg",
-            "/models/roof_textures/01/AmbientOcclusionMap.jpg"
+            "/models/roof_textures/tiles/barrelVault_barcelona/BaseMap.jpg",
+            "/models/roof_textures/tiles/barrelVault_barcelona/SpecularMap.jpg",
+            "/models/roof_textures/tiles/barrelVault_barcelona/NormalMap.jpg",
+            "/models/roof_textures/tiles/barrelVault_barcelona/AmbientOcclusionMap.jpg"
         ]
     },
     {
-        "roofTextureName": "b",
+        "roofTextureName": "barrelVault_dover",
         "roofTextureType": "abc",
-        "roofTextureIconPath": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/barrelVault_dover/BaseMap.jpg",
         "roofTexturePath": [
-            "/models/roof_textures/Amber_Roof/Amber Diff 4.jpg",
-            "/models/roof_textures/Amber_Roof/SpecularMap.png",
-            "/models/roof_textures/Amber_Roof/NormalMap.png",
-            "/models/roof_textures/Amber_Roof/AmbientOcclusionMap.png"
+            "/models/roof_textures/tiles/barrelVault_dover/BaseMap.jpg",
+            "/models/roof_textures/tiles/barrelVault_dover/SpecularMap.jpg",
+            "/models/roof_textures/tiles/barrelVault_dover/NormalMap.jpg",
+            "/models/roof_textures/tiles/barrelVault_dover/AmbientOcclusionMap.jpg"
         ]
     },
     {
-        "roofTextureName": "c",
+        "roofTextureName": "oakRidge_agedCedar",
         "roofTextureType": "abc",
-        "roofTextureIconPath": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/oakRidge_agedCedar/BaseMap.jpg",
         "roofTexturePath": [
-            "/models/roof_textures/pacific_tile/base.jpg",
-            "/models/roof_textures/pacific_tile/SpecularMap.jpg",
-            "/models/roof_textures/pacific_tile/NormalMap.jpg",
-            "/models/roof_textures/pacific_tile/AmbientOcclusionMap.jpg"
+            "/models/roof_textures/tiles/oakRidge_agedCedar/BaseMap.jpg",
+            "/models/roof_textures/tiles/oakRidge_agedCedar/SpecularMap.jpg",
+            "/models/roof_textures/tiles/oakRidge_agedCedar/NormalMap.jpg",
+            "/models/roof_textures/tiles/oakRidge_agedCedar/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "oakRidge_amber",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/oakRidge_amber/BaseMap.jpg",
+        "roofTexturePath": [
+            "/models/roof_textures/tiles/oakRidge_amber/BaseMap.jpg",
+            "/models/roof_textures/tiles/oakRidge_amber/SpecularMap.jpg",
+            "/models/roof_textures/tiles/oakRidge_amber/NormalMap.jpg",
+            "/models/roof_textures/tiles/oakRidge_amber/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "pacific_tile",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/pacific_tile/BaseMap.jpg",
+        "roofTexturePath": [
+            "/models/roof_textures/tiles/pacific_tile/BaseMap.jpg",
+            "/models/roof_textures/tiles/pacific_tile/SpecularMap.jpg",
+            "/models/roof_textures/tiles/pacific_tile/NormalMap.jpg",
+            "/models/roof_textures/tiles/pacific_tile/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "pineCrest_barclay",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/pineCrest_barclay/BaseMap.jpg",
+        "roofTexturePath": [
+            "/models/roof_textures/tiles/pineCrest_barclay/BaseMap.jpg",
+            "/models/roof_textures/tiles/pineCrest_barclay/SpecularMap.jpg",
+            "/models/roof_textures/tiles/pineCrest_barclay/NormalMap.jpg",
+            "/models/roof_textures/tiles/pineCrest_barclay/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "pineCrest_charcoal",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/pineCrest_charcoal/BaseMap.jpg",
+        "roofTexturePath": [
+            "/models/roof_textures/tiles/pineCrest_charcoal/BaseMap.jpg",
+            "/models/roof_textures/tiles/pineCrest_charcoal/SpecularMap.jpg",
+            "/models/roof_textures/tiles/pineCrest_charcoal/NormalMap.jpg",
+            "/models/roof_textures/tiles/pineCrest_charcoal/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "singleWidthSlate_brownstone",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/singleWidthSlate_brownstone/BaseMap.jpg",
+        "roofTexturePath": [
+            "/models/roof_textures/tiles/singleWidthSlate_brownstone/BaseMap.jpg",
+            "/models/roof_textures/tiles/singleWidthSlate_brownstone/SpecularMap.jpg",
+            "/models/roof_textures/tiles/singleWidthSlate_brownstone/NormalMap.jpg",
+            "/models/roof_textures/tiles/singleWidthSlate_brownstone/AmbientOcclusionMap.jpg"
+        ]
+    },
+    {
+        "roofTextureName": "singleWidthSlate_sonora",
+        "roofTextureType": "abc",
+        "roofTextureIconPath": "/models/roof_textures/tiles/singleWidthSlate_sonora/BaseMap.jpg",
+        "roofTexturePath": [
+            "/models/roof_textures/tiles/singleWidthSlate_sonora/BaseMap.jpg",
+            "/models/roof_textures/tiles/singleWidthSlate_sonora/SpecularMap.jpg",
+            "/models/roof_textures/tiles/singleWidthSlate_sonora/NormalMap.jpg",
+            "/models/roof_textures/tiles/singleWidthSlate_sonora/AmbientOcclusionMap.jpg"
         ]
     }
 ]

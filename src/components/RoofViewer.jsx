@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -10,6 +10,10 @@ import { GUI } from "three/addons/libs/lil-gui.module.min.js";
 
 import MyHouse from "../scripts/myHouse";
 
+import TileMenu from "./TileMenu";
+
+import { SelectedTileContext } from "./SelectedTileContext";
+
 function RoofViewer() {
   const canvasRef = useRef(null);
   const sceneRef = useRef(null);
@@ -17,6 +21,10 @@ function RoofViewer() {
   const rendererRef = useRef(null);
   const controlsRef = useRef(null);
   const transformControlRef = useRef(null);
+
+  const { selectedTile, setSelectedTile } = useContext(SelectedTileContext);
+
+  const myHouseRef = useRef(null);
 
   // Function to calculate the surface area
   function calculateSurfaceArea(geometry) {
@@ -242,11 +250,11 @@ function RoofViewer() {
       // "/hdri/symmetrical_garden_02_1k.hdr",
       //"/hdri/rosendal_plains_1_1k.hdr",
       //"/hdri/rogland_clear_night_1k.hdr",
-      "/hdri/qwantani_dusk_2_1k.hdr",
-      //"/hdri/goegap_road_1k.hdr",
+      //"/hdri/qwantani_dusk_2_1k.hdr",
+      "/hdri/goegap_road_1k.hdr",
       function (texture, textureData) {
         texture.mapping = THREE.EquirectangularReflectionMapping;
-        //sceneRef.current.background = texture;
+        sceneRef.current.background = texture;
         sceneRef.current.environment = texture;
       }
     );
@@ -257,7 +265,7 @@ function RoofViewer() {
     // Instantiate a loader
     const loader = new GLTFLoader();
 
-    const myHouse = new MyHouse(sceneRef.current, "/models/Model_01.glb");
+    myHouseRef.current = new MyHouse(sceneRef.current, "/models/Model_01.glb");
 
     // // Load a glTF resource
     // loader.load(
@@ -303,9 +311,16 @@ function RoofViewer() {
     animate();
   }, []);
 
+  useEffect(() => {
+    myHouseRef.current
+      .loadTextures(selectedTile)
+      .then(() => myHouseRef.current.changeRoofMaterialTextures());
+  }, [selectedTile]);
+
   return (
     <div className="container">
       <canvas className="canvas" ref={canvasRef}></canvas>
+      <TileMenu url="/json/texture_paths.json" />
     </div>
   );
 }

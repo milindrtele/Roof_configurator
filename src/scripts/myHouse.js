@@ -129,7 +129,7 @@ class MyHouse {
   // Initialize and load everything
   init() {
     this.loadGlb()
-      .then(() => this.loadTextures("c"))
+      .then(() => this.loadTextures("pineCrest_charcoal"))
       .then(() => this.changeRoofMaterialTextures())
       .catch((error) => {
         console.error("Error initializing MyHouse:", error);
